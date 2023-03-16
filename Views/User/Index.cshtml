@@ -1,0 +1,19 @@
+@model List<uh_sample.Models.User>
+
+@{
+    ViewData["Title"] = "Users List";
+}
+
+<h1>All Users</h1>
+
+@foreach (var item in Model)
+{
+    <div>
+        <span style="font-weight: bold">First Name: </span>@item.FirstName
+        <br/>
+        <span style="font-weight: bold">Last Name: </span>@item.LastName
+        <br/>
+        <span style="font-weight: bold">Email: </span>@item.Email
+        <hr />
+    </div>
+}
